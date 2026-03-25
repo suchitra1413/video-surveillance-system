@@ -8,7 +8,7 @@ import numpy as np
 import tempfile
 
 # Load model
-model = tf.keras.models.load_model("violence_model.h5")
+model = tf.keras.models.load_model("violence_model.h5",compile=False)
 
 def preprocess(frame):
     frame = cv2.resize(frame, (128, 128))
